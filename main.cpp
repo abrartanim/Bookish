@@ -3,14 +3,15 @@
 #include <time.h>
 #include <cstdlib>
 
-using namespace std;
+using namespace std; //something
+
 //for both linux and windows compiler
 void clear_screen()
 {
 #ifdef _WIN32
-    system("CLS");
+  system("CLS");
 #else
-    system ("clear");
+  system("clear");
 #endif
 }
 
@@ -47,7 +48,6 @@ bool check_exit;
 
 //==========================================================================
 
-
 void adminfunc();
 void customer_func();
 int main(void)
@@ -69,12 +69,14 @@ int main(void)
     case 1:
       adminfunc();
       cout << "\t\t\tPress any key to continue..." << endl;
-      getchar(); getchar();
+      getchar();
+      getchar();
       break;
     case 2:
       customer_func();
       cout << "\t\t\tPress any key to continue..." << endl;
-      getchar(); getchar();
+      getchar();
+      getchar();
       break;
     }
   }
@@ -92,31 +94,36 @@ void adminfunc()
     switch (choice)
     {
     case 1:
-      
+
       add_info();
       cout << "\t\t\tPress any key to continue..." << endl;
-      getchar(); getchar();
+      getchar();
+      getchar();
       break;
     case 2:
-     
+
       display_info("info.txt");
       cout << "\t\t\tPress any key to continue..." << endl;
-      getchar(); getchar();
+      getchar();
+      getchar();
       break;
     case 3:
       delete_info();
       cout << "\t\t\tPress any key to continue..." << endl;
-      getchar(); getchar();
+      getchar();
+      getchar();
       break;
     case 4:
       delete_all_records();
       cout << "\t\t\tPress any key to continue..." << endl;
-      getchar(); getchar();
+      getchar();
+      getchar();
       break;
-      case 5:
+    case 5:
       display_sale_list();
       cout << "Press any key to continue..." << endl;
-      getchar(); getchar();
+      getchar();
+      getchar();
       break;
     case 6:
       return;
@@ -141,22 +148,25 @@ void customer_func()
     cout << "\n\n\t\t\t1. Add items to cartt\n\n\t\t\t2. Remove items from cart\n\n\t\t\t3. Print Invoice\n\n\t\t\t4. Change interface\n\n\t\t\t5. Exit\n";
     cout << "\n\t\t\tYour Choice: ";
     cin >> choice;
-    switch (choice)  
+    switch (choice)
     {
     case 1:
-    clear_screen();
+      clear_screen();
       getinfo();
       cout << "\t\t\tPress any key to continue..." << endl;
-      getchar(); getchar();
+      getchar();
+      getchar();
       break;
     case 2:
       remove_from_list();
       cout << "\t\t\tPress any key to continue..." << endl;
-      getchar(); getchar();
+      getchar();
+      getchar();
       break;
     case 3:
       print_invoice();
-      getchar(); getchar();
+      getchar();
+      getchar();
       break;
     case 4:
       return;
